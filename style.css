@@ -1,63 +1,100 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header img{
+    width: 100px;
+    height: 100px;
 }
 
-nav {
+header{
+    background-color: rgb(255, 255, 255);
     display: flex;
-    justify-content: flex-end;
-}
-
-nav a {
-    text-decoration: none;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    margin: 20px;
-    background-color: rgb(206, 128, 26);
-    border-radius: 10px;
-    border: rgb(0, 255, 229) double 7px;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-header img {
-    width: 90px;
+    justify-content: space-around;
     padding: 10px;
-    
 }
-header {
-    border-bottom: 2px dashed purple;
-    display: flex;
+.hero{
+    position: relative;
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://assets-global.website-files.com/63d3e0aead95e54ffdce9095/63f595ed207f7c82a1a8d440_coca-cola%20(1).webp");
+}
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+transform: translate(-50%,-50%);   
+}
+.hero-text h1{
+    color: white;
+}
+.bg{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.589);
 }
 
-main img {
-    width: 225px;
+main{
+    background-color: white;
     border-radius: 20px;
-    border: double 5px lawngreen;
+    margin-top: 10px;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav a{
+    transition: 0.5s;
+    border: 5px rgb(0, 0, 0) double;
+    border-radius: 20px;
+    padding: 5px;
     margin: 5px;
+    text-decoration: none;
+    color: black;
 }
 
-main h1 {
+nav a:hover{
+    transition: 0.5s;
+    border: 5px red double;
+    border-radius: 25px;
+    color: red;
+}
+main a{
+    color: rgb(0, 0, 0);
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+footer img{
+    width: 59px;
+    height: 59px;
+    position: absolute;
+    right: 8px;
+    top: 476px;
+}
+
+section img {
+    width: 235px;
+    height: 235px;
+        transition: .5s;
+
+}
+section img:hover{
+    scale: 1.1;
+    transition: .5s;
+}
+
+main section{
+    background-color: rgb(255, 255, 255);
     text-align: center;
 }
-
-header { background-color: rgb(0, 255, 0);}
-
-main {
-    background-color: rgb(206, 128, 26);
-}
-
-footer {
-    background-color: rgb(255, 230, 0);
-    padding: 15px;
-    border-top: 2px dashed purple;
-}
-
-main p {
-    padding: 10px;
-    text-align: center;
+.about-us{
+    padding: 15px 20px;
 }
